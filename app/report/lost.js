@@ -9,13 +9,14 @@ import {
   Platform
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useRouter } from 'expo-router';
-import { useState } from "react";
+import { useRouter, useFocusEffect } from 'expo-router';
+import { useState, useCallback } from "react";
 import { addLostReport } from '../context/report-context';
 import { formatDateInput } from '../utils/date-format';
 
 export default function LostItem() {
   const router = useRouter();
+
   const [object, setObject] = useState("");
   const [color, setColor] = useState("");
   const [id, setId] = useState("");
@@ -26,6 +27,22 @@ export default function LostItem() {
   const [local, setLocal] = useState("");
   const [time, setTime] = useState("");
   const [errors, setErrors] = useState({});
+
+  // ✅ Reseta sempre que entrar na tela
+  useFocusEffect(
+    useCallback(() => {
+      setObject("");
+      setColor("");
+      setId("");
+      setAdditionalInfo("");
+      setBrand("");
+      setModel("");
+      setExtraInfo("");
+      setLocal("");
+      setTime("");
+      setErrors({});
+    }, [])
+  );
 
   const validateRequiredFields = () => {
     const nextErrors = {};
@@ -66,6 +83,18 @@ export default function LostItem() {
       local: local.trim(),
       time: time.trim(),
     });
+
+    // ✅ Limpa os campos ao enviar
+    setObject("");
+    setColor("");
+    setId("");
+    setAdditionalInfo("");
+    setBrand("");
+    setModel("");
+    setExtraInfo("");
+    setLocal("");
+    setTime("");
+    setErrors({});
 
     router.push('/message/sucessoLost');
   };
