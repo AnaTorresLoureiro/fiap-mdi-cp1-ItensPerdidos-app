@@ -87,22 +87,20 @@ Depois:
 ---
 
 ## 🎥 Demonstração
- -> https://youtu.be/yfm43BBrAxQ
+ 
 
 ### 📸 Telas do App
 
-* Tela inicial (Home)
-* Cadastro de item encontrado
-* Cadastro de item perdido
-* Histórico de itens
-
-
+<img width="383" height="789" alt="image" src="https://github.com/user-attachments/assets/6207b773-2b60-425d-9473-1260d29aade9" />
+<img width="421" height="913" alt="image" src="https://github.com/user-attachments/assets/912cc39e-0848-49e5-aa56-f7139fbda98f" />
+<img width="436" height="907" alt="image" src="https://github.com/user-attachments/assets/ea0823d5-e87f-470e-9cce-dc7428a0dcba" />
+<img width="437" height="912" alt="image" src="https://github.com/user-attachments/assets/4c635bb4-b0d7-4410-98b8-31466afa9b2f" />
 
 ---
 
 ### 🎬 Vídeo do funcionamento
 
-
+-> https://youtu.be/yfm43BBrAxQ
 
 ---
 
