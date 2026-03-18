@@ -9,7 +9,7 @@ export default function MessageLost() {
         style={styles.logo}
         resizeMode="contain"
       />
-      <Text style={styles.titulo}>Sintimos muito pelo o ocorrido!</Text>
+      <Text style={styles.titulo}>Sentimos muito pelo o ocorrido!</Text>
       <Text style={styles.texto}>Sua solicitação foi registrada e ajudará a comunidade a identificar possíveis itens encontrados no campus. Fique de olho pelo aplicativo para verificar se alguma descrição corresponde ao seu item. Caso alguém encontre o objeto, a secretaria entrará em contato para orientar sobre a retirada.</Text>
     </View>
   );
